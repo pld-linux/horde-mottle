@@ -3,7 +3,7 @@
 %define	_hordeapp mottle
 %define	_snap	2008-10-11
 #define	_rc		rc1
-%define	_rel	2
+%define	_rel	3
 
 %include	/usr/lib/rpm/macros.php
 Summary:	Template for horde projects
@@ -30,7 +30,7 @@ Conflicts:	apache-base < 2.4.0-1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'pear(Horde.*)'
+%define		_noautoreq_pear	Horde.*
 
 %define		hordedir	/usr/share/horde
 %define		_appdir		%{hordedir}/%{_hordeapp}
