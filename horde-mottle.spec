@@ -5,7 +5,6 @@
 #define	_rc		rc1
 %define	_rel	3
 
-%include	/usr/lib/rpm/macros.php
 Summary:	Template for horde projects
 Name:		horde-%{_hordeapp}
 Version:	0.1
